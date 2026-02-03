@@ -3,18 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>google</title>
+    <title>Thirukural - The Sacred Verses</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Luffy and the Straw Hat Pirates: The story follows Luffy and his crew as they journey through the Grand Line. The crew includes the ambitious swordsman Roronoa Zoro, the skilled navigator and thief Nami, the sharp-shooter Usopp, and the cook Sanji, each with their own dreams and backstories.
-The World: The world of One Piece is vast and includes many unique islands, each with its own culture and history. The series begins in the East Blue, the most peaceful sea, before the crew ventures into the perilous Grand Line.
-Themes: A central theme is the pursuit of dreams and the power of found family and friendship (nakama) as they face hardships together.
-Storytelling: The narrative is known for its intricate plotlines, deep character arcs, and the way each island and story arc is interconnected to build the overall world and story.
-Major Arcs: The story is told through numerous story arcs, from the initial "East Blue" saga to more complex sagas like "Arabasta," "Water 7," and "Wano Country". The "Final Saga" is currently in progress. </h2>
-<h1>rio</h1>    
-<img src="one pice.jpg" alt="">
-    <p>one pice story</p>
+    <div id="ebook-container">
+        <header>
+            <button id="menu-btn" class="menu-btn">☰ Menu</button>
+            <h1>Thirukural - The Sacred Verses</h1>
+            <div id="controls">
+                <button id="prev-btn">Previous</button>
+                <span id="page-info"></span>
+                <button id="next-btn">Next</button>
+                <button id="bookmark-btn">Bookmark</button>
+                <button id="fullscreen-btn">Full Screen</button>
+                <select id="font-size">
+                    <option value="16">Small</option>
+                    <option value="18" selected>Medium</option>
+                    <option value="20">Large</option>
+                    <option value="24">Extra Large</option>
+                </select>
+            </div>
+        </header>
+
+        <nav id="sidebar">
+            <h2>Table of Contents</h2>
+            <ul id="toc"></ul>
+            <h2>Bookmarks</h2>
+            <ul id="bookmarks"></ul>
+            <h2>Search</h2>
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-btn">Search</button>
+            <div id="search-results"></div>
+        </nav>
+
+        <main id="content">
+            <div class="page" id="page-1">
+                <h1>Introduction to Thirukural</h1>
+                <p>Thirukural, also known as the Kural, is a classic Tamil sangam literature consisting of 1,330 couplets or kurals. It was authored by Thiruvalluvar, a poet and philosopher who lived around the 1st century BCE.</p>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x200/3498db/ffffff?text=Thirukural+Manuscript" alt="Ancient Thirukural Manuscript">
+                    <p class="image-caption">An illustration of ancient Tamil literature</p>
+                </div>
+                <p>The work is divided into three main sections:</p>
+                <ul>
+                    <li><strong>Aram (Virtue)</strong>: 380 couplets on moral and ethical living</li>
+                    <li><strong>Porul (Wealth)</strong>: 700 couplets on polity, economy, and society</li>
+                    <li><strong>Inbam (Love)</strong>: 250 couplets on love and relationships</li>
+                </ul>
+                <p>Thirukural is considered one of the greatest works of Tamil literature and has been translated into many languages. It emphasizes universal values and practical wisdom for everyday life.</p>
+            </div>
+            <div class="page" id="page-2">
+                <h1>Aram (Virtue) - Chapter 1: Invocation</h1>
+                <p>The first chapter invokes the blessings of God for the composition of the Kural.</p>
+                <div class="kural">
+                    <h3 class="kural-teaser">அகர முதல எழுத்தெல்லாம் ஆதி</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">அகர முதல எழுத்தெல்லாம் ஆதி</div>
+                        <div class="kural-line">பகவன் முதற்றே உலகு</div>
+                    </div>
+                    <p class="english">A is the first of all letters; the first of all beings is God; the first of all sciences is the knowledge of letters.</p>
+                    <p class="number">Kural 1</p>
+                </div>
+                <div class="kural">
+                    <h3 class="kural-teaser">கற்றதனால் ஆய பயன் என்கொல்</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">கற்றதனால் ஆய பயன் என்கொல்</div>
+                        <div class="kural-line">வாலறிவன் நற்றாள் தொழாஅர்</div>
+                    </div>
+                    <p class="english">What profit has he who has learned, if he does not worship the good feet of Him who has the sacred knowledge?</p>
+                    <p class="number">Kural 2</p>
+                </div>
+            </div>
+            <div class="page" id="page-3">
+                <h1>Aram (Virtue) - Chapter 2: The Glory of Rain</h1>
+                <p>This chapter praises rain as the source of all life and prosperity.</p>
+                <div class="kural">
+                    <h3 class="kural-teaser">தானம் தவம் இரண்டும் ஒருங்கு</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">தானம் தவம் இரண்டும் ஒருங்கு</div>
+                        <div class="kural-line">நின்றால் காணும் அறிவு</div>
+                    </div>
+                    <p class="english">When charity and penance are united, wisdom will be perfected and all virtues will be acquired.</p>
+                    <p class="number">Kural 3</p>
+                </div>
+                <div class="kural">
+                    <h3 class="kural-teaser">மழைக்கு நீர் ஆகி மண்ணுக்கு</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">மழைக்கு நீர் ஆகி மண்ணுக்கு</div>
+                        <div class="kural-line">உரமாகி மன்னுயிர்க்கு ஏமமாகி</div>
+                    </div>
+                    <p class="english">Rain becomes water for the earth, manure for the soil, and food for living beings.</p>
+                    <p class="number">Kural 4</p>
+                </div>
+            </div>
+            <div class="page" id="page-4">
+                <h1>Aram (Virtue) - Chapter 3: The Greatness of Ascetics</h1>
+                <p>This chapter discusses the virtues of ascetics and their way of life.</p>
+                <div class="kural">
+                    <h3 class="kural-teaser">இருள்சேர் இருவினையும் சேரா இறைவன்</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">இருள்சேர் இருவினையும் சேரா</div>
+                        <div class="kural-line">இறைவன் பொருள்சேர் புகழ்புரிந்தார்</div>
+                    </div>
+                    <p class="english">The ascetics who have acquired fame by their association with God are free from the darkness of the two kinds of karma.</p>
+                    <p class="number">Kural 5</p>
+                </div>
+                <div class="kural">
+                    <h3 class="kural-teaser">பொருள்சேர் புகழ்புரிந்தார் மாட்டு இறைவன்</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">பொருள்சேர் புகழ்புரிந்தார் மாட்டு</div>
+                        <div class="kural-line">இறைவன் இருள்சேர் இருவினையும்</div>
+                    </div>
+                    <p class="english">Those who have acquired fame through wealth are not free from the darkness of karma, but those who have acquired fame through God are free.</p>
+                    <p class="number">Kural 6</p>
+                </div>
+            </div>
+            <div class="page" id="page-5">
+                <h1>Porul (Wealth) - Chapter 39: The Right Scepter</h1>
+                <p>This chapter discusses the qualities of a good ruler.</p>
+                <div class="kural">
+                    <h3 class="kural-teaser">இறைமாட்சி இல்லாள் பொருள் இல்லாள்</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">இறைமாட்சி இல்லாள் பொருள்</div>
+                        <div class="kural-line">இல்லாள் இல்லாள் பொருள் இறைமாட்சி</div>
+                    </div>
+                    <p class="english">Wealth without sovereignty is worthless; sovereignty without wealth is worthless.</p>
+                    <p class="number">Kural 381</p>
+                </div>
+                <div class="kural">
+                    <h3 class="kural-teaser">பொருள் இல்லாள் இறைமாட்சி இல்லாள்</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">பொருள் இல்லாள் இறைமாட்சி</div>
+                        <div class="kural-line">இல்லாள் பொருள் இறைமாட்சி இல்லாள்</div>
+                    </div>
+                    <p class="english">A king without wealth cannot rule; wealth without a king cannot be protected.</p>
+                    <p class="number">Kural 382</p>
+                </div>
+            </div>
+            <div class="page" id="page-6">
+                <h1>Inbam (Love) - Chapter 109: The Pre-marital Love</h1>
+                <p>This chapter describes the beauty and joy of pre-marital love.</p>
+                <div class="kural">
+                    <h3 class="kural-teaser">கண்ணின் துஞ்சல் துயிலின் இனிதே</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">கண்ணின் துஞ்சல் துயிலின்</div>
+                        <div class="kural-line">இனிதே கண்ணின் துஞ்சல்</div>
+                    </div>
+                    <p class="english">The sleep of the eyes is sweet; the sleep of love is sweeter.</p>
+                    <p class="number">Kural 1081</p>
+                </div>
+                <div class="kural">
+                    <h3 class="kural-teaser">துஞ்சல் துயிலின் இனிதே கண்ணின்</h3>
+                    <div class="tamil-text">
+                        <div class="kural-line">துஞ்சல் துயிலின் இனிதே</div>
+                        <div class="kural-line">கண்ணின் துஞ்சல் துயிலின்</div>
+                    </div>
+                    <p class="english">The sleep that comes from love is sweeter than the sleep of the eyes.</p>
+                    <p class="number">Kural 1082</p>
+                </div>
+            </div>
+            <div class="page" id="page-7">
+                <h1>Conclusion</h1>
+                <p>Thirukural provides timeless wisdom on various aspects of life. Its teachings on virtue, wealth, and love continue to guide people across generations.</p>
+                <h2>Key Themes</h2>
+                <ul>
+                    <li>Moral and ethical living</li>
+                    <li>Importance of education and wisdom</li>
+                    <li>Righteous governance</li>
+                    <li>Social harmony</li>
+                    <li>The beauty of love</li>
+                </ul>
+                <p>The Kural emphasizes that true wealth comes from virtue and wisdom, not material possessions. It teaches that love is the highest virtue and that a life lived in accordance with dharma leads to ultimate happiness.</p>
+                <p>May the wisdom of Thiruvalluvar guide you in your journey through life.</p>
+            </div>
+            <div class="page" id="page-8">
+                <h1>The Bhagavad Gita - Introduction</h1>
+                <p>The Bhagavad Gita is a 700-verse Hindu scripture that is part of the Indian epic Mahabharata. It is a conversation between Prince Arjuna and the god Krishna, who serves as his charioteer.</p>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x200/e74c3c/ffffff?text=Bhagavad+Gita" alt="Bhagavad Gita Illustration">
+                    <p class="image-caption">Ancient Indian scripture</p>
+                </div>
+                <p>The Gita addresses the moral and philosophical dilemmas faced by Arjuna on the battlefield of Kurukshetra. Krishna imparts spiritual wisdom and guidance on duty, righteousness, and the paths to spiritual liberation.</p>
+                <p>Key themes include:</p>
+                <ul>
+                    <li><strong>Dharma (Duty)</strong>: Righteous action without attachment to results</li>
+                    <li><strong>Karma Yoga</strong>: The path of selfless action</li>
+                    <li><strong>Bhakti Yoga</strong>: The path of devotion</li>
+                    <li><strong>Jnana Yoga</strong>: The path of knowledge</li>
+                </ul>
+            </div>
+            <div class="page" id="page-9">
+                <h1>The Bhagavad Gita - Chapter 2: Sankhya Yoga</h1>
+                <p>In this chapter, Krishna explains the nature of the soul and the importance of performing one's duty without attachment.</p>
+                <div class="verse">
+                    <h3 class="verse-teaser">You have the right to perform your prescribed duties...</h3>
+                    <p class="sanskrit">karmaṇy-evādhikāras te mā phaleṣu kadācana</p>
+                    <p class="english">You have the right to perform your prescribed duties, but you are not entitled to the fruits of your actions.</p>
+                    <p class="number">Verse 2.47</p>
+                </div>
+                <div class="verse">
+                    <h3 class="verse-teaser">Perform your duty without attachment to the results...</h3>
+                    <p class="sanskrit">yogasthaḥ kuru karmāṇi saṅgaṃ tyaktvā dhanañjaya</p>
+                    <p class="english">Perform your duty without attachment to the results, for by working without attachment one attains the Supreme.</p>
+                    <p class="number">Verse 2.48</p>
+                </div>
+                <p>Krishna teaches Arjuna that true wisdom lies in understanding the impermanence of the material world and the eternal nature of the soul.</p>
+            </div>
+            <div class="page" id="page-10">
+                <h1>The Bhagavad Gita - Chapter 6: Dhyana Yoga</h1>
+                <p>This chapter discusses meditation and self-control as means to achieve spiritual realization.</p>
+                <div class="verse">
+                    <h3 class="verse-teaser">For the yogi who has conquered the mind...</h3>
+                    <p class="sanskrit">yadā viniyataṃ cittam ātmany-evāvatiṣṭhate</p>
+                    <p class="english">When the mind is controlled and fixed on the Self alone, the yogi is said to be in yoga.</p>
+                    <p class="number">Verse 6.18</p>
+                </div>
+                <div class="verse">
+                    <h3 class="verse-teaser">The yogi whose mind is fixed on Me...</h3>
+                    <p class="sanskrit">yogī yuñjīta satatam ātmānaṃ rahasi sthitah</p>
+                    <p class="english">The yogi should constantly engage his mind in meditation, remaining alone in a secluded place.</p>
+                    <p class="number">Verse 6.10</p>
+                </div>
+                <p>The chapter emphasizes the importance of steady practice and detachment in the path of meditation.</p>
+            </div>
+            <div class="page" id="page-11">
+                <h1>The Bhagavad Gita - Conclusion</h1>
+                <p>The Bhagavad Gita concludes with Krishna revealing his divine form to Arjuna and emphasizing the importance of devotion and surrender to God.</p>
+                <h2>Key Lessons</h2>
+                <ul>
+                    <li>Fulfill your duties selflessly</li>
+                    <li>Control your mind and senses</li>
+                    <li>Surrender to the divine will</li>
+                    <li>Seek knowledge of the Self</li>
+                </ul>
+                <p>The Gita teaches that true peace comes from understanding one's true nature and living in harmony with dharma. It remains a timeless guide for spiritual seekers across the world.</p>
+                <p>May the teachings of the Bhagavad Gita illuminate your path to wisdom and liberation.</p>
+            </div>
+            <div class="page" id="page-12">
+                <h1>The Ramayana - Introduction</h1>
+                <p>The Ramayana is an ancient Indian epic poem composed by the sage Valmiki. It narrates the life of Rama, an avatar of the god Vishnu, and his journey to rescue his wife Sita from the demon king Ravana.</p>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x200/27ae60/ffffff?text=Ramayana+Epic" alt="Ramayana Epic">
+                    <p class="image-caption">The great Indian epic</p>
+                </div>
+                <p>The story is divided into several kandas (books) and explores themes of duty, honor, love, and the triumph of good over evil.</p>
+                <p>Main characters:</p>
+                <ul>
+                    <li><strong>Rama</strong>: The protagonist, embodiment of dharma</li>
+                    <li><strong>Sita</strong>: Rama's devoted wife</li>
+                    <li><strong>Lakshmana</strong>: Rama's loyal brother</li>
+                    <li><strong>Hanuman</strong>: The devoted monkey god</li>
+                    <li><strong>Ravana</strong>: The antagonist, king of Lanka</li>
+                </ul>
+            </div>
+            <div class="page" id="page-13">
+                <h1>The Ramayana - The Exile</h1>
+                <p>Rama is exiled to the forest for fourteen years due to a promise made by his father, King Dasharatha. Sita and Lakshmana accompany him in his exile.</p>
+                <div class="verse">
+                    <h3 class="verse-teaser">Rama's resolve in exile</h3>
+                    <p class="sanskrit">nāhaṃ kāryaṃ tyajāmi kadācana</p>
+                    <p class="english">I never abandon my duty, no matter what the circumstances.</p>
+                </div>
+                <p>During their stay in the forest, Sita is abducted by Ravana, leading to the great battle that forms the climax of the epic.</p>
+                <p>The Ramayana teaches the importance of keeping promises, protecting the innocent, and maintaining righteousness even in adversity.</p>
+            </div>
+            <div class="page" id="page-14">
+                <h1>The Ramayana - The Battle and Victory</h1>
+                <p>Rama, with the help of an army of monkeys led by Hanuman, wages war against Ravana to rescue Sita.</p>
+                <div class="verse">
+                    <h3 class="verse-teaser">Hanuman's devotion</h3>
+                    <p class="sanskrit">jaya śrī rāma</p>
+                    <p class="english">Victory to Lord Rama</p>
+                </div>
+                <p>After defeating Ravana, Rama returns to Ayodhya with Sita and is crowned king. The Ramayana ends with the establishment of Rama's rule, symbolizing the victory of dharma.</p>
+                <p>The epic emphasizes virtues like loyalty, courage, and devotion, and continues to inspire millions with its moral teachings.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-

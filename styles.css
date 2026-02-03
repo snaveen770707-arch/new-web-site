@@ -1,0 +1,468 @@
+/* E-book Styles */
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e9f0;
+}
+
+#ebook-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #ece7ed;
+    color: rgb(231, 5, 5);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#page-info {
+    font-weight: bold;
+}
+
+select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #ecf0f1;
+    padding: 1rem;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+
+#sidebar.open {
+    transform: translateX(0);
+}
+
+#sidebar h2 {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 0.5rem;
+}
+
+#sidebar a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-results {
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#search-results div {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#search-results div:hover {
+    background-color: #f8f9fa;
+}
+
+#content {
+    margin-left: 0;
+    padding: 1rem;
+    transition: margin-left 0.3s;
+    min-height: calc(100vh - 120px); /* Account for header height */
+}
+
+.page {
+    display: none;
+    max-width: 1000px; /* Increased from 800px for better reading */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-height: 500px; /* Ensure minimum content height */
+}
+
+.page h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.page p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.kural {
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.kural-teaser {
+    font-family: 'Noto Sans Tamil', 'Latha', sans-serif;
+    font-size: 1.3rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 0.5rem;
+}
+
+.tamil-text {
+    margin-bottom: 1rem;
+}
+
+.kural-line {
+    font-family: 'Noto Sans Tamil', 'Latha', sans-serif;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.kural .english {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.kural .number {
+    font-size: 0.9rem;
+    color: #3498db;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.verse {
+    background-color: #f9f9f9;
+    border-left: 4px solid #e74c3c;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.verse-teaser {
+    font-family: 'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif;
+    font-size: 1.3rem;
+    color: #27ae60;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 0.5rem;
+}
+
+.verse .sanskrit {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.verse .english {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.verse .number {
+    font-size: 0.9rem;
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Image styling for e-book content */
+.page img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.page .image-container {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.page .image-container img {
+    max-width: 90%;
+    height: auto;
+}
+
+.page .image-caption {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Landscape specific image adjustments */
+@media (orientation: landscape) and (max-height: 500px) {
+    .page img {
+        max-width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    .page .image-container img {
+        max-width: 70%;
+    }
+}
+
+/* Zoomed image styles */
+.page img.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 90vh;
+    z-index: 1000;
+    cursor: grab;
+    background: rgba(0,0,0,0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.page img.zoomed:hover {
+    cursor: grab;
+}
+
+.page img.zoomed:active {
+    cursor: grabbing;
+}
+
+/* Overlay for zoomed images */
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+    display: none;
+}
+
+.image-overlay.active {
+    display: block;
+}
+
+/* Responsive design */
+@media (min-width: 769px) {
+    #sidebar {
+        transform: translateX(0);
+    }
+
+    #content {
+        margin-left: 250px;
+        padding: 2rem;
+    }
+
+    .page {
+        max-width: 900px;
+        padding: 3rem;
+    }
+}
+
+/* Landscape orientation fixes */
+@media (orientation: landscape) and (max-height: 500px) {
+    #ebook-container {
+        min-height: auto;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #content {
+        min-height: auto;
+        padding: 0.5rem;
+    }
+
+    .page {
+        min-height: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .page h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .kural {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .kural-teaser {
+        font-size: 1.1rem;
+    }
+
+    .kural-line {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile portrait and landscape */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    #sidebar {
+        width: 200px;
+    }
+
+    #content {
+        padding: 0.5rem;
+    }
+
+    .page {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .page h1 {
+        font-size: 1.5rem;
+    }
+
+    .page p {
+        font-size: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #controls {
+        flex-wrap: wrap;
+    }
+}
+
+/* Full screen styles */
+:fullscreen {
+    background-color: rgb(243, 237, 241);
+}
+
+:fullscreen #ebook-container {
+    max-width: none;
+    box-shadow: none;
+}
